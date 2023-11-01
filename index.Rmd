@@ -14,7 +14,7 @@ output:
 
 Hi, welcome to my personal website! 
 
-My name is Shaoyu Chen, and I am a the first year graduate student in MS Biostatistics program. Here you can find my academic and professional experience.
+My name is Shaoyu Chen, and I am a first year graduate student in MS Biostatistics program. Here you can find my academic and professional experience.
 
 
 

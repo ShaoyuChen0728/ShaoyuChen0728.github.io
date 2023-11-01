@@ -1,0 +1,55 @@
+---
+title: "flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+```
+
+```{r}
+data("rest_inspec")
+tidy_rest =
+  rest_inspec |>
+  select(boro, cuisine_description, dba, score, street, zipcode, grade) |>
+  drop_na() |>
+  filter(
+    grade %in% c("A", "B", "C")) 
+tidy_rest
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A scatter plot of American Restaurant Scores in Manhattan.
+
+```{r}
+tidy_rest |>
+  filter(
+    cuisine_description == "American",
+    boro == "MANHATTAN") |>
+  mutate(text_label = str_c("Name: ", dba, "\nGrade: ", grade)) |> 
+  plot_ly(x = ~street, y = ~score, type = "scatter", mode = "markers", color = ~grade, text = ~text_label, alpha = 0.5)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
