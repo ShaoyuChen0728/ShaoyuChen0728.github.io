@@ -41,10 +41,16 @@ tidy_rest |>
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Chart B bar plot of Number of restaurants per street in BRONX
 
 ```{r}
-
+tidy_rest |>
+  filter(
+    boro == "BRONX"
+  ) |>
+  count(street) |> 
+  mutate(street = fct_reorder(street, n)) |> 
+  plot_ly(x = ~street, y = ~n, color = ~street, type = "bar", colors = "viridis")
 ```
 
 ### Chart C
