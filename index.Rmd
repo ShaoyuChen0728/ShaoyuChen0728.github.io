@@ -1,7 +1,5 @@
 ---
 title: "Shaoyu Chen's Website"
-author: "Shaoyu Chen"
-date: "2023-10-31"
 output: 
   html_document:
     toc: true
@@ -38,3 +36,7 @@ Moreover, below is my email, GitHub account, and instagram accout. You can also 
 * [github](https://github.com/ShaoyuChen0728)
 * [instagram](https://www.instagram.com/jeychen2000/)
 * email: sc5351@cumc.columbia.edu
+
+## Three distinct plots on NYC Restaurant Inspections
+
+Here is the link to the Inspections: [flexdashboard](flexdashboard.html)
