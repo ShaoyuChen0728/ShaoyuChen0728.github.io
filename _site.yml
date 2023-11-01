@@ -4,7 +4,7 @@ navbar:
   title: "Home"
   right:
     - text: "Resume"
-      href: Resume_Shaoyu Chen.html
+      href: Resume_Shaoyu Chen.pdf
     - text: "flexdashboard"
       href: flexdashboard.html
     - icon: fa-envelope fa-lg
