@@ -4,6 +4,8 @@ navbar:
   title: "Home"
   right:
     - text: "Resume"
+      href: Resume_Shaoyu Chen.pdf
+    - text: "Flexdashboard"
       href: flexdashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<sc5351@cumc.columbia.edu>
