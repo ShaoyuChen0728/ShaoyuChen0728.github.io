@@ -53,9 +53,13 @@ tidy_rest |>
   plot_ly(x = ~street, y = ~n, color = ~street, type = "bar", colors = "viridis")
 ```
 
-### Chart C
+### Chart C box plot of Chinese Restaurant Scores in Brooklyn's street
 
 ```{r}
-
+tidy_rest |>
+  filter(boro == "BROOKLYN",
+  cuisine_description == "Chinese")|>
+  mutate(street = fct_reorder(street, score)) |>
+  plot_ly(y = ~score, color = ~street, type = "box", colors = "viridis")
 ```
 
